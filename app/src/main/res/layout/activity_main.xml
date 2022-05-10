@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/bleIconoff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_ble_off"
+            android:visibility="visible"></ImageView>
+
+        <ImageView
+            android:id="@+id/bleIconOn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_ble_on"
+            android:visibility="invisible"></ImageView>
+
+        <ImageView
+            android:id="@+id/menuIconMainActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ic_menu"
+            android:visibility="visible"
+            android:clickable="true"></ImageView>
+
+        <ImageView
+            android:id="@+id/wifiOff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_wifi_off"
+            android:visibility="visible"></ImageView>
+
+        <ImageView
+            android:id="@+id/wifiOn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_wifi_on"
+            android:visibility="invisible"></ImageView>
+
+        <TextView
+            android:id="@+id/TopMostNodeCharacteristic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/wifiOff"
+            android:gravity="center_horizontal"
+            android:hint="The Displayed Node Characteristic"
+            android:textSize="20dp"></TextView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_topMostNode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TopMostNodeCharacteristic"
+            tools:listitem="@layout/node_item" />
+
+        <TextView
+            android:id="@+id/AllAvailableNodesCharacteristic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recycler_view_topMostNode"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:hint="All Nodes sorted by"
+            android:textSize="20dp"></TextView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_allNodes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/AllAvailableNodesCharacteristic"
+            tools:listitem="@layout/node_item" />
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

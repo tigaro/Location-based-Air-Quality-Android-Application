@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/item_closestNode"
+        android:title="Closest Node"
+        app:showAsAction="never">
+    </item>
+    <item
+        android:id="@+id/item_highestTemperature"
+        android:title="Highest Temperature"
+        app:showAsAction="never">
+    </item>
+    <item
+        android:id="@+id/item_highestHumidity"
+        android:title="Highest Humidity"
+        app:showAsAction="never">
+    </item>
+    <item
+        android:id="@+id/item_highestGas"
+        android:title="Highest Gas"
+        app:showAsAction="never">
+    </item>
+    <item
+        android:id="@+id/item_highestPressure"
+        android:title="Highest Pressure"
+        app:showAsAction="never">
+    </item>
+</menu>

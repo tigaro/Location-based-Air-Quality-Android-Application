@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/item_temperatureASC"
+        android:title="Temperature ASC"
+        app:showAsAction="never">
+    </item>
+    <item
+        android:id="@+id/item_temperatureDESC"
+        android:title="Temperature DESC"
+        app:showAsAction="never">
+    </item>
+    <item
+        android:id="@+id/item_humidityASC"
+        android:title="Humidity ASC"
+        app:showAsAction="never">
+    </item>
+    <item
+        android:id="@+id/item_humidityDESC"
+        android:title="Humidity DESC"
+        app:showAsAction="never">
+    </item>
+    <item
+        android:id="@+id/item_pressureASC"
+        android:title="Pressure ASC"
+        app:showAsAction="never">
+    </item>
+    <item
+        android:id="@+id/item_pressureDESC"
+        android:title="Pressure DESC"
+        app:showAsAction="never">
+    </item>
+    <item
+        android:id="@+id/item_rssiASC"
+        android:title="RSSI ASC"
+        app:showAsAction="never">
+    </item>
+    <item
+        android:id="@+id/item_rssiDESC"
+        android:title="RSSI DESC"
+        app:showAsAction="never">
+    </item>
+</menu>
